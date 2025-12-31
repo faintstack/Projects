@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.container  {
+    width: 375px;
+    margin: 20px auto;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #fafafa;
+}
+
+/* -----HEADER------ */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #C6C6C6;
+    padding: 10px;
+    background-color: white;
+}
+
+header h1{
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    font-family: "Lobster", cursive;
+    font-weight: 100;
+}
+
+.acc-holder{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ----------------MAIN--------------- */
+
+/* --------TOP-------- */
+
+.top-part-sect{
+    padding: 6px;
+    display: flex;
+    gap: 5px;
+}
+
+.top-part-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.top-part-para{
+    text-align: left;
+}
+
+.name{
+    font-weight: 800;
+    font-size: 0.70rem;
+}
+
+.location{
+    font-size: 0.70rem;
+}
+
+/* ---------MIDDLE----------- */
+
+.hero-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+
+/* ----------BOTTOM----------- */
+
+.bottom-part-sect{
+    padding: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.actions i:hover {
+  opacity: 0.6;
+}
+
+.icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.likes-count{
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 8px 0;
+}
+
+.caption{
+    font-size: 0.75rem;
+    padding-bottom: 6px;
+}
+
+.post{
+    margin-bottom: 22px;
+    background-color: #FFFFFF;
+}
