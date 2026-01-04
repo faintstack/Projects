@@ -12,27 +12,31 @@
 <body>
     <div class="container">
         <main class="main">
-            <h1 id="main-heading">Metric/Imperical Unit Conversion</h1>
-            <div><span id="main-input">20</span></div>
-            <button id="btn">Convert</button>
+            <section id="top-sec">
+                <h1 id="main-heading">Metric/Imperical Unit Conversion</h1>
+                <input id="main-input" type="text" placeholder="0">
+                <button id="btn">Convert</button>
+            </section>
 
             <div class="section-div">
                 <section class="section" id="sec1">
                     <h3 class="first">Length (Meter/Feet)</h3>
-                    <p class="second">20 meters = 0.0000 feet | 20 feet = 0.000 meters</p>
+                    <p class="second" id="lengthEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
                 </section>
 
                 <section class="section">
                     <h3 class="first">Volume (Liters/Gallons)</h3>
-                    <p class="second">20 meters = 0.0000 feet | 20 feet = 0.000 meters</p>
+                    <p class="second" id="volumeEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
                 </section>
 
                 <section class="section" id="sec3">
                     <h3 class="first">Mass (Kilogram/Pounds)</h3>
-                    <p class="second">20 meters = 0.0000 feet | 20 feet = 0.000 meters</p>
+                    <p class="second" id="massEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
                 </section>
             </div>
         </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
