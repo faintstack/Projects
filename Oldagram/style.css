@@ -113,3 +113,8 @@ header h1{
     margin-bottom: 22px;
     background-color: #FFFFFF;
 }
+
+button{
+    border: none;
+    background-color: #fafafa;
+}
