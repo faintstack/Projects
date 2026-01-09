@@ -13,27 +13,30 @@
     <div class="container">
         <main class="main">
             <section id="top-sec">
-                <h1 id="main-heading">Metric/Imperical Unit Conversion</h1>
-                <input id="main-input" type="text" placeholder="0">
-                <button id="btn">Convert</button>
+                <h1 id="main-heading">Metric/Imperial Unit Conversion</h1>
+
+                <label for="main-input" class="visually-hidden">Enter a number to convert</label>
+                <input id="main-input" type="number" placeholder="0">
+
+                <button id="btn" aria-label="Convert entered value into multiple units">Convert</button>
             </section>
 
-            <div class="section-div">
-                <section class="section" id="sec1">
-                    <h3 class="first">Length (Meter/Feet)</h3>
-                    <p class="second" id="lengthEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
-                </section>
+            <section class="section-div">
+                <article class="section" id="sec1">
+                    <h2 class="first">Length (Meter/Feet)</h2>
+                    <p class="second" id="lengthEl" aria-live="polite">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
+                </article>
 
-                <section class="section">
-                    <h3 class="first">Volume (Liters/Gallons)</h3>
-                    <p class="second" id="volumeEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
-                </section>
+                <article class="section">
+                    <h2 class="first">Volume (Liters/Gallons)</h2>
+                    <p class="second" id="volumeEl" aria-live="polite">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
+                </article>
 
-                <section class="section" id="sec3">
-                    <h3 class="first">Mass (Kilogram/Pounds)</h3>
-                    <p class="second" id="massEl">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
-                </section>
-            </div>
+                <article class="section" id="sec3">
+                    <h2 class="first">Mass (Kilogram/Pounds)</h2>
+                    <p class="second" id="massEl" aria-live="polite">0 meters = 0.0000 feet | 0 feet = 0.000 meters</p>
+                </article>
+            </section>
         </main>
     </div>
 
