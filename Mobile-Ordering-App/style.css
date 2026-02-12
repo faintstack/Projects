@@ -14,6 +14,7 @@ body {
     background-color: #FFFFFF;
     margin: 30px auto;
     font-family: "Smythe", system-ui;
+    position: relative;
 }
 
 header {
@@ -38,6 +39,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
 .food-container {
     display: flex;
@@ -91,4 +93,51 @@ header {
 .divider {
     border-bottom: 1px solid #DEDEDE;
     width: 508px;
+}
+
+/* Payment Details */
+
+.payment-details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 524px;
+    height: 543px;
+    background-color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 4px 2px #8B8B8B;
+}
+
+#card-details-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 40px;
+}
+
+.form-design {
+    width: 475px;
+    height: 71px;
+    border: 1.3px solid #757575;
+    margin-top: 25px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+#pay-btn {
+    width: 475px;
+    height: 71px;
+    background-color: #16DB99;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
 }
