@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orderify!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Smythe&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
         <header>
-            <img src="./Images/header.webp" alt="Jimmy's Dinner restraunt header">
-            <section class="header-text-section">
+            <img src="./Images/header.webp" alt="Jimmy's Dinner restraunt banner" id="header-img">
+            <section class="hero-text-section">
                 <h2>Jimmy's Diner</h2>
                 <p>The best burgers and pizzas in town.</p>
             </section>
         </header>
 
         <main>
-            <section>
-                <article>
+            <section class="order-items">
+                <article class="food-container">
                     <section class="left">
-                        <div class="image-food">🍕</div>
+                        <img src="Images/pizza-svg.svg" alt="" class="food-img">
                         <div class="info-food">
-                            <h3 class="name-food">Pizza</h3>
-                            <p class="description-food">pepperoni, mushroom, mozarella</p>
-                            <h4 class="price-food">$14</h4>
+                            <h3 class="food-name">Pizza</h3>
+                            <p class="food-desc">pepperoni, mushroom, mozarella</p>
+                            <h4 class="food-price">$14</h4>
                         </div>
                     </section>
 
                     <section class="right">
-                        <button class="increase-order-btn" aria-label="the button represents add label">+</button>
+                        <button class="add-btn" aria-label="the button represents add label">+</button>
+                    </section>
+                </article>
+
+                <div class="divider"></div>
+
+
+                <article class="food-container">
+                    <section class="left">
+                        <img src="Images/hamburger-svg.svg" alt="" class="food-img">
+                        <div class="info-food">
+                            <h3 class="food-name">Hamburger</h3>
+                            <p class="food-desc">cheese, lettuce, tomato</p>
+                            <h4 class="food-price">$12</h4>
+                        </div>
+                    </section>
+
+                    <section class="right">
+                        <button class="add-btn" aria-label="the button represents add label">+</button>
+                    </section>
+                </article>
+
+                <div class="divider"></div>
+
+                <article class="food-container">
+                    <section class="left">
+                        <img src="Images/beer-svg.svg" class="food-img" alt="">
+                        <div class="info-food">
+                            <h3 class="food-name">Beer</h3>
+                            <p class="food-desc">rain, hops, yeast, water</p>
+                            <h4 class="food-price">$12</h4>
+                        </div>
+                    </section>
+
+                    <section class="right">
+                        <button class="add-btn" aria-label="the button represents add label">+</button>
                     </section>
                 </article>
             </section>
-
             
         </main>
 
@@ -43,35 +81,7 @@
 
 <!--------- COMMENTED FURTHER FOR NOW ------------->
 
- <!--  <article>
-                    <section class="left">
-                        <div class="image-food"></div>
-                        <div class="info-food">
-                            <h3>Hamburger</h3>
-                            <p>cheese, lettuce, tomato</p>
-                            <h4>14$</h4>
-                        </div>
-                    </section>
-
-                    <section class="right">
-                        <button class="increase-order-btn"></button>
-                    </section>
-                </article>
-
-                <article>
-                    <section class="left">
-                        <div class="image-food"></div>
-                        <div class="info-food">
-                            <h3>Beer</h3>
-                            <p>rain, hops, yeast, water</p>
-                            <h4>14$</h4>
-                        </div>
-                    </section>
-
-                    <section class="right">
-                        <button class="increase-order-btn"></button>
-                    </section>
-                </article> -->
+  
 <!-- <section>
                 <h4>Your Order</h4>
                 <section class="order-items">
