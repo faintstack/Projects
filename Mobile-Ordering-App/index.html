@@ -74,24 +74,37 @@
             
         </main>
 
-        <div><button id="complete-order-btn">Complete Order</button></div>
+        <div id="load"><button id="complete-order-btn">Complete Order</button></div>
 
         <section id="payment-card">
                 <h4 id="card-details-text">Enter card details</h4>
 
-                <input type="text" 
-                placeholder="Enter your name"
-                class="form-design">
+                <form id="payment-form">
+                    <input type="text"
+                    placeholder="Enter your name"
+                    name="fullName"
+                    class="form-design"
+                    required>
 
-                <input type="number"
-                placeholder="Enter card number"
-                class="form-design">
+                    <input type="number"
+                    placeholder="Enter card number"
+                    name="number"
+                    class="form-design"
+                    required>
 
-                <input type="number"
-                placeholder="Enter CVV"
-                class="form-design">
+                    <input type="text"
+                    placeholder="Enter CVV"
+                    name="CVV"
+                    class="form-design"
+                    maxlength="3"
+                    minlength="3"
+                    pattern="\d{3}"
+                    required>
 
-                <button id="pay-btn">Pay</button>
+                    <button id="payment-btn">Pay</button>
+                </form>
+
+                
         </section>
     </div>
 
