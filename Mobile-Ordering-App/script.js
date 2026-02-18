@@ -6,11 +6,28 @@ const paymentBtn = document.getElementById('payment-btn')
 const forRtNow = document.getElementById('load')
 const paymentForm = document.getElementById('payment-form')
 
-function getFeedHtml(){
-    let feedHtml = ``
+let order = []
+
+document.addEventListener('click', function(e){
+    if(e.target.dataset.add) {
+        order.push(renderMenu.target.dataset.add)
+        renderOrder()
+    }
+})
+
+function renderOrder(){
+    for(let item of order){
+        const hh = menuArray.find(u => u.id === item)
+        orderHtml += ``
+    }
+    document.getElementById('order').innerHTML = orderHtml
+}
+
+function getMenuHtml(){
+    let menuHtml = ``
     
     menuArray.forEach(function(item){
-        feedHtml += `
+        menuHtml += `
         <section class="order-items">
                 <article class="food-container">
                     <section class="left">
@@ -23,22 +40,23 @@ function getFeedHtml(){
                     </section>
 
                     <section class="right">
-                        <button class="add-btn" aria-label="the button represents add label">+</button>
+                        <button class="add-btn" id="addbtn"
+                        aria-label="the button represents add label"
+                        data-add="${item.id}">+</button>
                     </section>
                 </article>
 
                 <div class="divider"></div>
             `
     })
-
-    return feedHtml
+    return menuHtml
 }
 
-function render(){
-    document.getElementById('feed').innerHTML = getFeedHtml()
+function renderMenu(){
+    document.getElementById('menu').innerHTML = getMenuHtml()
 }
 
-render()
+renderMenu()
 
 completeOrderBtn.addEventListener('click', function() {
     paymentCard.style.display = 'flex'
