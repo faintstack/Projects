@@ -51,6 +51,7 @@ body{
     width: 45px;
     height: 45px;
     background-color: #1B244A;
+    cursor: pointer;
 }
 
 #newgameSec{
@@ -65,4 +66,5 @@ body{
     width: 130px;
     height: 50px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
